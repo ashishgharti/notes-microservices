@@ -1,0 +1,54 @@
+# Java build
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.hprof
+
+# Maven build
+target/
+
+# Gradle build
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+shelf/
+workspace.xml
+
+# VS Code
+.vscode/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Environment variables and credentials
+.env
+*.env
+
+# H2 or other embedded DB files
+*.mv.db
+*.h2.db
+*.trace.db
+
+# Node/npm stuff (if frontend later)
+node_modules/
+dist/
+
+# Swagger/OpenAPI generated files
+swagger.json
+swagger-ui/
+
+# Docker
+*.pid
+docker-compose.override.yml
