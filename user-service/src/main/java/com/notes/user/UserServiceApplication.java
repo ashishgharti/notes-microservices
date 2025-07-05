@@ -1,4 +1,4 @@
-package com.notes.user.user_service;
+package com.notes.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
