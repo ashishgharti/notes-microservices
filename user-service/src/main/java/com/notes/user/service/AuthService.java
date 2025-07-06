@@ -7,7 +7,6 @@ import com.notes.user.model.Role;
 import com.notes.user.model.User;
 import com.notes.user.repository.RoleRepository;
 import com.notes.user.repository.UserRepository;
-import com.notes.user.security.JwtService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -39,7 +38,7 @@ public class AuthService {
 
         userRepository.save(user);
 
-        String token=jwtService.generateToken(user);
+        String token=jwtService.generateToken(user.getEmail());
         return new AuthResponse(token,user.getName(), user.getEmail());
     }
 
@@ -51,7 +50,7 @@ public class AuthService {
             throw new RuntimeException("Invalid credentials");
         }
 
-        String token= jwtService.generateToken(user);
+        String token= jwtService.generateToken(user.getEmail());
         return new AuthResponse(token, user.getName(), user.getEmail());
     }
 
