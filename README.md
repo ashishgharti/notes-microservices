@@ -5,14 +5,14 @@ This is a microservices-based Notes App built using Spring Boot, Spring Cloud Ga
 ## Services
 
 - **User Service** – Handles user registration and login
-- **Note Service** – Manages user notes
+- **Note Service** – Manages user notes (CRUD)
 - **API Gateway** – Routes requests to the correct service and handles auth
 
 ## Technologies
 
-- Java 17
+- Java 21
 - Spring Boot
 - Spring Cloud Gateway
 - JWT Auth
 - Maven
-- MySQL / H2
+- MySQL
